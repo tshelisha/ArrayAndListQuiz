@@ -172,7 +172,7 @@ namespace ArrayTest
             Console.WriteLine("Total seconds to complete:");
             Console.WriteLine(time);
 
-            var score = (time * .4) + (wrongCount * .6);
+            int score = (int)((time * .4) + (wrongCount * .6));
 
             Console.WriteLine("Your Score:");
             Console.WriteLine(score);
