@@ -7,10 +7,13 @@ namespace ArrayTest
     {
         static void Main(string[] args)
         {
-            Stopwatch sw = Stopwatch.StartNew();
 
             Console.WriteLine("Hello!  This will be an exerecise in array and list creation!");
-            Console.WriteLine();
+            Console.WriteLine("Hit any key to begin the quiz and start the timer");
+            Console.ReadLine();
+
+            Stopwatch sw = Stopwatch.StartNew();
+
             var answer1 = "var numbers = new int[5];";
             var answer2 = "int[] numbers = new int[5];";
             var answer3 = "var teachers = new List<string>();";
@@ -169,10 +172,11 @@ namespace ArrayTest
             Console.WriteLine("Total seconds to complete:");
             Console.WriteLine(time);
 
-            var score = (time * .7) + (wrongCount * .3);
+            var score = (time * .4) + (wrongCount * .6);
 
             Console.WriteLine("Your Score:");
             Console.WriteLine(score);
+            Console.ReadLine();
         }
     }
 }
