@@ -22,7 +22,7 @@ namespace ArrayTest
             var answer6 = "teachers.Remove(\"Michael\");";
 
             var answer7 = "numbers[0] = 10;";
-            var answer8 = "Count";
+            var answer8 = "Capacity";
 
             var guess = "";
             var wrongCount = 0;
