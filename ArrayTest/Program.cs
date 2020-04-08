@@ -17,6 +17,7 @@ namespace ArrayTest
             var answer4 = "List<string> teachers = new List<string>();";
             var answer5 = "teachers.Add(\"Michael\");";
             var answer6 = "teachers.Remove(\"Michael\");";
+
             var answer7 = "numbers[0] = 10;";
             var answer8 = "Count";
 
