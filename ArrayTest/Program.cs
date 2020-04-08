@@ -1,6 +1,12 @@
 ﻿using System;
+<<<<<<< HEAD
 using System.Diagnostics;
 
+=======
+using System.Collections.Generic;
+using System.Diagnostics;
+
+>>>>>>> aa59fa38a83198cb943197fa60dbf4439c75e8db
 namespace ArrayTest
 {
     class Program
@@ -9,6 +15,9 @@ namespace ArrayTest
         {
 
             Console.WriteLine("Hello!  This will be an exerecise in array and list creation!");
+            Console.WriteLine();
+            Console.WriteLine("Try to get the lowest possible score. . .");
+            Console.WriteLine();
             Console.WriteLine("Hit any key to begin the quiz and start the timer");
             Console.ReadLine();
 
@@ -22,7 +31,8 @@ namespace ArrayTest
             var answer6 = "teachers.Remove(\"Michael\");";
 
             var answer7 = "numbers[0] = 10;";
-            var answer8 = "Capacity";
+            var answer8 = "Count";
+            var answer9 = "Length";
 
             var guess = "";
             var wrongCount = 0;
@@ -31,7 +41,7 @@ namespace ArrayTest
             {
                 Console.WriteLine("Using inferred typing: create a new array named numbers that will hold 5 integers:");
                 guess = Console.ReadLine();
-                if(guess == answer1)
+                if (guess == answer1)
                 {
                     Console.WriteLine("Correct!");
                     Console.WriteLine();
@@ -43,7 +53,7 @@ namespace ArrayTest
                 }
 
             } while (answer1 != guess);
-            
+
             do
             {
                 Console.WriteLine("Using explicit typing: create a new array named numbers that will hold 5 integers:");
@@ -77,6 +87,24 @@ namespace ArrayTest
                 }
 
             } while (answer7 != guess);
+
+            do
+            {
+                Console.WriteLine("Complete the code to get the total number of elements in the numbers array");
+                Console.WriteLine("numbers.______;");
+                guess = Console.ReadLine();
+                if (guess == answer9)
+                {
+                    Console.WriteLine("Correct!");
+                    Console.WriteLine();
+                }
+                else
+                {
+                    Console.WriteLine("Try again");
+                    wrongCount++;
+                }
+
+            } while (answer9 != guess);
 
             //-------------------------Lists
             do
@@ -149,8 +177,10 @@ namespace ArrayTest
 
             do
             {
-                Console.WriteLine("The following code will store the size of the teachers list in a variable");
-                Console.WriteLine("but the code is missing to complete this");
+                Console.WriteLine("The following code will get the number of elements contained in the teachers list");
+                Console.WriteLine("and store that integer in a variable named size.");
+                Console.WriteLine();
+                Console.WriteLine("The code to complete this is missing.");
                 Console.WriteLine("What property will complete the code?");
                 Console.WriteLine("var size = teachers._______;");
                 guess = Console.ReadLine();
@@ -177,6 +207,7 @@ namespace ArrayTest
             Console.WriteLine("Your Score:");
             Console.WriteLine(score);
             Console.ReadLine();
+
         }
     }
 }
