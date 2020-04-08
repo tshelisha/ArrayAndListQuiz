@@ -10,6 +10,9 @@ namespace ArrayTest
         {
 
             Console.WriteLine("Hello!  This will be an exerecise in array and list creation!");
+            Console.WriteLine();
+            Console.WriteLine("Try to get the lowest possible score. . .");
+            Console.WriteLine();
             Console.WriteLine("Hit any key to begin the quiz and start the timer");
             Console.ReadLine();
 
