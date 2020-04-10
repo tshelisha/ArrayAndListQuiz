@@ -9,7 +9,7 @@ namespace ArrayTest
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Hello!  This will be an exerecise in array and list creation!");
+            Console.WriteLine("Hello!  This will be an exerecise for classes!");
             Console.WriteLine();
             Console.WriteLine("Try to get the lowest possible score. . .");
             Console.WriteLine();
@@ -18,23 +18,17 @@ namespace ArrayTest
 
             Stopwatch sw = Stopwatch.StartNew();
 
-            var answer1 = "var numbers = new int[5];";
-            var answer2 = "int[] numbers = new int[5];";
-            var answer3 = "var teachers = new List<string>();";
-            var answer4 = "List<string> teachers = new List<string>();";
-            var answer5 = "teachers.Add(\"Michael\");";
-            var answer6 = "teachers.Remove(\"Michael\");";
+            var answer1 = "var product = new Product();";
+            var answer2 = "product.Name = \"Xbox\";";
+            var answer3 = "public string Name {get;set;}";
+            var answer4 = "blueprints";
 
-            var answer7 = "numbers[0] = 10;";
-            var answer8 = "Count";
-            var answer9 = "Length";
-
-            var guess = "";
+            string guess;
             var wrongCount = 0;
 
             do
             {
-                Console.WriteLine("Using inferred typing: create a new array named numbers that will hold 5 integers:");
+                Console.WriteLine("Using inferred typing: create a new instance of the Product class and name it product");
                 guess = Console.ReadLine();
                 if(guess == answer1)
                 {
@@ -51,7 +45,7 @@ namespace ArrayTest
             
             do
             {
-                Console.WriteLine("Using explicit typing: create a new array named numbers that will hold 5 integers:");
+                Console.WriteLine("Now that you have created the instance, product.  Assign the value \"Xbox\" to its Name property:");
                 guess = Console.ReadLine();
                 if (guess == answer2)
                 {
@@ -68,43 +62,7 @@ namespace ArrayTest
 
             do
             {
-                Console.WriteLine("Place the value, 10, in the numbers array at index 0:");
-                guess = Console.ReadLine();
-                if (guess == answer7)
-                {
-                    Console.WriteLine("Correct!");
-                    Console.WriteLine();
-                }
-                else
-                {
-                    Console.WriteLine("Try again");
-                    wrongCount++;
-                }
-
-            } while (answer7 != guess);
-
-            do
-            {
-                Console.WriteLine("Complete the code to get the total number of elements in the numbers array");
-                Console.WriteLine("numbers.______;");
-                guess = Console.ReadLine();
-                if (guess == answer9)
-                {
-                    Console.WriteLine("Correct!");
-                    Console.WriteLine();
-                }
-                else
-                {
-                    Console.WriteLine("Try again");
-                    wrongCount++;
-                }
-
-            } while (answer9 != guess);
-
-            //-------------------------Lists
-            do
-            {
-                Console.WriteLine("Using inferred typing: create a new empty List named teachers that will hold string values:");
+                Console.WriteLine("Create a public property of type string called Name and give it read and write access:");
                 guess = Console.ReadLine();
                 if (guess == answer3)
                 {
@@ -114,6 +72,7 @@ namespace ArrayTest
                 else
                 {
                     Console.WriteLine("Try again");
+                    Console.WriteLine();
                     wrongCount++;
                 }
 
@@ -121,9 +80,10 @@ namespace ArrayTest
 
             do
             {
-                Console.WriteLine("Using explicit typing: create a new empty List named teachers that will hold string values:");
+                Console.WriteLine("Fill in the blank:");
+                Console.WriteLine("Classes serve as _________ for creating custom types:");
                 guess = Console.ReadLine();
-                if (guess == answer4)
+                if (guess == answer4.ToLower())
                 {
                     Console.WriteLine("Correct!");
                     Console.WriteLine();
@@ -134,63 +94,9 @@ namespace ArrayTest
                     wrongCount++;
                 }
 
-            } while (answer4 != guess);
+            } while (answer4.ToLower() != guess);
 
-            do
-            {
-                Console.WriteLine("Add the name, Michael, to the teachers list:");
-                guess = Console.ReadLine();
-                if (guess == answer5)
-                {
-                    Console.WriteLine("Correct!");
-                    Console.WriteLine();
-                }
-                else
-                {
-                    Console.WriteLine("Try again");
-                    wrongCount++;
-                }
 
-            } while (answer5 != guess);
-
-            do
-            {
-                Console.WriteLine("Remove the name, Michael, from the teachers list:");
-                guess = Console.ReadLine();
-                if (guess == answer6)
-                {
-                    Console.WriteLine("Correct!");
-                    Console.WriteLine();
-                }
-                else
-                {
-                    Console.WriteLine("Try again");
-                    wrongCount++;
-                }
-
-            } while (answer6 != guess);
-
-            do
-            {
-                Console.WriteLine("The following code will get the number of elements contained in the teachers list");
-                Console.WriteLine("and store that integer in a variable named size.");
-                Console.WriteLine();
-                Console.WriteLine("The code to complete this is missing.");
-                Console.WriteLine("What property will complete the code?");
-                Console.WriteLine("var size = teachers._______;");
-                guess = Console.ReadLine();
-                if (guess == answer8)
-                {
-                    Console.WriteLine("Correct!");
-                    Console.WriteLine();
-                }
-                else
-                {
-                    Console.WriteLine("Try again");
-                    wrongCount++;
-                }
-
-            } while (answer8 != guess);
 
             var time = sw.Elapsed.Seconds;
 
