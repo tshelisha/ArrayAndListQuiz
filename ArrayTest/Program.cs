@@ -1,12 +1,8 @@
 ﻿using System;
-<<<<<<< HEAD
-using System.Diagnostics;
-
-=======
 using System.Collections.Generic;
 using System.Diagnostics;
 
->>>>>>> aa59fa38a83198cb943197fa60dbf4439c75e8db
+
 namespace ArrayTest
 {
     class Program
