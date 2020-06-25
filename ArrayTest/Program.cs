@@ -193,7 +193,7 @@ namespace ArrayTest
 
             } while (answer8 != guess);
 
-            var time = sw.Elapsed.Seconds;
+            var time = sw.Elapsed.TotalSeconds;
 
             Console.WriteLine("Total seconds to complete:");
             Console.WriteLine(time);
