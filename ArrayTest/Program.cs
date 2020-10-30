@@ -21,14 +21,14 @@ namespace ArrayTest
 
             var answer1 = "var numbers = new int[5];";
             var answer2 = "int[] numbers = new int[5];";
-            var answer3 = "var teachers = new List<string>();";
-            var answer4 = "List<string> teachers = new List<string>();";
-            var answer5 = "teachers.Add(\"Michael\");";
-            var answer6 = "teachers.Remove(\"Michael\");";
+            var answer3 = "numbers[0] = 10;";
+            var answer4 = "Length";
+            var answer5 = "var teachers = new List<string>();";
+            var answer6 = "List<string> teachers = new List<string>();";
+            var answer7 = "teachers.Add(\"Michael\");";
+            var answer8 = "teachers.Remove(\"Michael\");";
+            var answer9 = "Count";
 
-            var answer7 = "numbers[0] = 10;";
-            var answer8 = "Count";
-            var answer9 = "Length";
 
             var guess = "";
             var wrongCount = 0;
@@ -71,42 +71,6 @@ namespace ArrayTest
             {
                 Console.WriteLine("Place the value, 10, in the numbers array at index 0:");
                 guess = Console.ReadLine();
-                if (guess == answer7)
-                {
-                    Console.WriteLine("Correct!");
-                    Console.WriteLine();
-                }
-                else
-                {
-                    Console.WriteLine("Try again");
-                    wrongCount++;
-                }
-
-            } while (answer7 != guess);
-
-            do
-            {
-                Console.WriteLine("Complete the code to get the total number of elements in the numbers array");
-                Console.WriteLine("numbers.______;");
-                guess = Console.ReadLine();
-                if (guess == answer9)
-                {
-                    Console.WriteLine("Correct!");
-                    Console.WriteLine();
-                }
-                else
-                {
-                    Console.WriteLine("Try again");
-                    wrongCount++;
-                }
-
-            } while (answer9 != guess);
-
-            //-------------------------Lists
-            do
-            {
-                Console.WriteLine("Using inferred typing: create a new empty List named teachers that will hold string values:");
-                guess = Console.ReadLine();
                 if (guess == answer3)
                 {
                     Console.WriteLine("Correct!");
@@ -122,7 +86,8 @@ namespace ArrayTest
 
             do
             {
-                Console.WriteLine("Using explicit typing: create a new empty List named teachers that will hold string values:");
+                Console.WriteLine("Complete the code to get the total number of elements in the numbers array");
+                Console.WriteLine("numbers.______;");
                 guess = Console.ReadLine();
                 if (guess == answer4)
                 {
@@ -137,9 +102,10 @@ namespace ArrayTest
 
             } while (answer4 != guess);
 
+            //-------------------------Lists
             do
             {
-                Console.WriteLine("Add the name, Michael, to the teachers list:");
+                Console.WriteLine("Using inferred typing: create a new empty List named teachers that will hold string values:");
                 guess = Console.ReadLine();
                 if (guess == answer5)
                 {
@@ -156,7 +122,7 @@ namespace ArrayTest
 
             do
             {
-                Console.WriteLine("Remove the name, Michael, from the teachers list:");
+                Console.WriteLine("Using explicit typing: create a new empty List named teachers that will hold string values:");
                 guess = Console.ReadLine();
                 if (guess == answer6)
                 {
@@ -173,12 +139,24 @@ namespace ArrayTest
 
             do
             {
-                Console.WriteLine("The following code will get the number of elements contained in the teachers list");
-                Console.WriteLine("and store that integer in a variable named size.");
-                Console.WriteLine();
-                Console.WriteLine("The code to complete this is missing.");
-                Console.WriteLine("What property will complete the code?");
-                Console.WriteLine("var size = teachers._______;");
+                Console.WriteLine("Add the name, Michael, to the teachers list:");
+                guess = Console.ReadLine();
+                if (guess == answer7)
+                {
+                    Console.WriteLine("Correct!");
+                    Console.WriteLine();
+                }
+                else
+                {
+                    Console.WriteLine("Try again");
+                    wrongCount++;
+                }
+
+            } while (answer7 != guess);
+
+            do
+            {
+                Console.WriteLine("Remove the name, Michael, from the teachers list:");
                 guess = Console.ReadLine();
                 if (guess == answer8)
                 {
@@ -192,6 +170,28 @@ namespace ArrayTest
                 }
 
             } while (answer8 != guess);
+
+            do
+            {
+                Console.WriteLine("The following code will get the number of elements contained in the teachers list");
+                Console.WriteLine("and store that integer in a variable named size.");
+                Console.WriteLine();
+                Console.WriteLine("The code to complete this is missing.");
+                Console.WriteLine("What property will complete the code?");
+                Console.WriteLine("var size = teachers._______;");
+                guess = Console.ReadLine();
+                if (guess == answer9)
+                {
+                    Console.WriteLine("Correct!");
+                    Console.WriteLine();
+                }
+                else
+                {
+                    Console.WriteLine("Try again");
+                    wrongCount++;
+                }
+
+            } while (answer9 != guess);
 
             var time = sw.Elapsed.TotalSeconds;
 
