@@ -1,4 +1,4 @@
-﻿using System;
+﻿25using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
@@ -29,6 +29,7 @@ namespace ArrayTest
             var answer8 = "teachers.Remove(\"Michael\");";
             var answer9 = "Count";
 
+            //Score was 1755.
 
             var guess = "";
             var wrongCount = 0;
